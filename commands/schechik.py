@@ -114,7 +114,7 @@ def schetchick(call):
             Answer7(call, user_id)
 
         if call.data == 'Копирайтинг':
-            user_summ[user_id]['m_question'] = '1'
+            user_summ[user_id]['m_question'] += '1'
             if user_button_states[user_id]['Копирайтинг']:
                 user_summ[user_id]['summ'] += 2000
             if not user_button_states[user_id]['Копирайтинг']:
@@ -122,7 +122,7 @@ def schetchick(call):
             Answer7(call, user_id)
 
         if call.data == 'Поддержка и обновления':
-            user_summ['m_question'] = '1'
+            user_summ[user_id]['m_question'] += '1'
             if user_button_states[user_id]['Поддержка и обновления']:
                 user_summ[user_id]['summ'] += 2500
             if not user_button_states[user_id]['Поддержка и обновления']:
@@ -130,7 +130,7 @@ def schetchick(call):
             Answer7(call, user_id)
 
         if call.data == 'Подключение аналитики':
-            user_summ['m_question'] = '1'
+            user_summ[user_id]['m_question'] += '1'
             if user_button_states[user_id]['Подключение аналитики']:
                 user_summ[user_id]['summ'] += 1500
             if not user_button_states[user_id]['Подключение аналитики']:
@@ -145,6 +145,4 @@ def schetchick(call):
         bot.send_message(call.message.chat.id, 'Хорошо, давай пересчитаем еще раз:')
         Answer1(call.message)
     if call.data == 'la grand final':
-        bot.send_message(call.message.chat.id, 'тут должна быть какая-то ссылка')
-
-    print(user_summ)
+        bot.send_message(call.message.chat.id, 'Отлично! Переходи по ссылке и создавай свои сайты быстро, просто и удобно\n\nhttps://t.me/vebdumschol25')

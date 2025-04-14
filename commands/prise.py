@@ -16,7 +16,7 @@ def Preparing(call):
     buttons = telebot.util.quick_markup(
         {
             'Пересчитать': {'callback_data': 'Restart'},
-            'Начать зарабатывать на разработки веб-сайтов': {'callback_data': 'la grand final'}
+            'Начать разрабатывать веб-сайты': {'callback_data': 'la grand final'}
         }
     )
     bot.send_message(call.message.chat.id,
