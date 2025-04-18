@@ -137,7 +137,7 @@ def schetchick(call):
                 user_summ[user_id]['summ'] -= 1500
             Answer7(call, user_id)
 
-    if call.data == 'Пропустить':
+    if call.data == 'Пропустить' or call.data == 'Дальше':
         Preparing(call)
 
     #Preparing
